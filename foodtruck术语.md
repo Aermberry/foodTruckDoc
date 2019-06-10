@@ -5,7 +5,7 @@
 |美食車|Food Truck|美食车|
 |      運營地點      |            Operating Location            |                 美食车的运营地点                 |
 |      招牌菜式      |   Signature Dish   |            美食车的招牌菜式            |
-| 盛事 |  |  |
+| 盛事及運動 |event  | 本土文化活動 |
 |相簿|Gallery|美食车的相薄，不是用户手机的相薄|
 |美食車先導計劃|Food Truck Pilot Scheme|美食車先導計劃|
 |香港旅游|Travel in Hong Kong|介绍一个香港旅游的网站|
@@ -23,7 +23,8 @@
 |    營運地點列表頁面    | OperatingLocationListPage | 显示当天运营的所有美食车的地点，上半部分用MapView显示地点，下半部分显示地点列表。 |
 |    招牌菜式列表頁面    | SignatureDisheListPage |                           列表显示所有美食车的招牌菜式                           |
 |單個地點的美食車近期蹤跡|LocationOperatingSchedulePage|單個地點的美食車近期蹤跡|
-| 盛事列表页面 |  | 列表显示盛事 |
+| 盛事列表页面 | eventListPage | 列表显示盛事 |
+| 盛事活動詳情页面 | eventDetilPage | 显示最近的盛事活動詳情 |
 |      相簿頁面      |    GalleryPage    |                   GridView显示盛事的相薄                   |
 | 相片详情页面 | PhotoDetailPage | 相片详情页面 |
 | 美食車先導計劃頁面 | FoodTruckPilot SchemePage |                      簡介美食車誕生的告示                      |
