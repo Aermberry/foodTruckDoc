@@ -3,12 +3,14 @@
 | :----------------- | :------------------------- | :----------------------------------------------------------- |
 |營運時間|Operating Schedule|记录美食车的运营时间、运营地点|
 |美食車|Food Truck|美食车|
+|警告信息|Warning Text|警告信息|
 |      運營地點      |            Operating Location            |                 美食车的运营地点                 |
 |      招牌菜式      |   Signature Dish   |            美食车的招牌菜式            |
 | 盛事及運動 |event  | 本土文化活動 |
-|相簿|Gallery|美食车的相薄，不是用户手机的相薄|
+| 相簿 |album|美食车的相薄，不是用户手机的相薄|
+| 相片 | photo | 與美食車相關的照片|
 |美食車先導計劃|Food Truck Pilot Scheme|美食車先導計劃|
-|香港旅游|Travel in Hong Kong|介绍一个香港旅游的网站|
+|香港旅游|travel in Hong Kong|介绍一个香港旅游的网站|
 |設定|Setting|设定|
 |分享|Share|提供**WhatsApp**、**Twitter**、**FaceBook**、**Line**、**Email**方式的外部分享|
 |返回|Back|返回上一級的頁面|
