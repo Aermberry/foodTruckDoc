@@ -47,7 +47,7 @@
 | :--: | :--: | :--: | :--: |
 |id|int|N|id，主鍵|
 |food_truck_id|int|N|美食車的id（關聯到food_trucks表中的id）|
-|SHIFT|char|Y|晝夜更替<br>"SHIFT": "m" —> the foodtruck work on morning<br/>"SHIFT": "n" —> the foodtruck work on night<br/>"SHIFT": null —> the foodtruck work on full day|
+|shift|varchar|Y|晝夜更替<br> "morning" —> the foodtruck work on morning<br/>"night" —> the foodtruck work on night<br/> "full_day" —> the foodtruck work on full day|
 |  date    |  datetime    | N | 日期  格式：YYYY-MM-DD |
 | business_hours_describe_en | varchar | N | 描述營業時間信息（EN） |
 | business_hours_describe_tc | varchar | N | 描述營業時間信息（TC） |
@@ -225,4 +225,5 @@
 |page_version|DATETIME|N|頁面信息版本號|
 |pushalert_version|DATETIME|N|警告信息版本號|
 |signature_dish_version|DATETIME|N|美食車招牌菜版本號|
+|last_update|DATETIME|N|最後更新的時間|
 
