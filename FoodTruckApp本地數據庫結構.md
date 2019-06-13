@@ -119,9 +119,9 @@
 | company_en | varchar |  N    | 公司名字（EN） |
 |company_tc|varchar|N|公司名字（TC）|
 |company_sc|varchar|N|公司名字（SC）|
-|Signature Dish_en|varchar|N|美食车的招牌菜式（EN）|
-|Signature Dish_tc|varchar|N|美食车的招牌菜式（TC）|
-|Signature Dish_sc|varchar|N|美食车的招牌菜式（SC）|
+|signature_dish_en|varchar|N|美食车的招牌菜式（EN）|
+|signature_dish_tc|varchar|N|美食车的招牌菜式（TC）|
+|signature_dish_sc|varchar|N|美食车的招牌菜式（SC）|
 |photo_en|varchar|N|美食車封面圖的url（EN）|
 |photo_tc|varchar|N|美食車封面圖的url（TC）|
 |photo_sc|varchar|N|美食車封面圖的url（SC）|
@@ -131,15 +131,12 @@
 |menu_url_en|varchar|N|美食車菜單（EN）|
 |menu_url_tc|varchar|N|美食車菜單（SC）|
 |menu_url_sc|varchar|N|美食車菜單（TC）|
-|twitter_url_en|varchar|N|twitter外鏈（EN）|
-|twitter_url_tc|varchar|N|twitter外鏈（SC）|
-|twitter_url_sc|varchar|N|twitter外鏈（TC）|
-|facebook_url_en|varchar|N|facebook外鏈（EN）|
-|facebook_url_tc|varchar|N|facebook外鏈（SC）|
-|facebook_url_sc|varchar|N|facebook外鏈（TC）|
-|instagram_url_en|varchar|N|instagram外聯（EN）|
-|instagram_url_tc|varchar|N|instagram外聯（SC）|
-|instagram_url_sc|varchar|N|instagram外聯（TC）|
+|twitter_url_en|varchar|N|twitter_url（EN）|
+|twitter_url_tc|varchar|N|twitter_url（SC）|
+|twitter_url_sc|varchar|N|twitter_url（TC）|
+|facebook_url_en|varchar|N|facebook_url（EN）|
+|facebook_url_tc|varchar|N|facebook_url（SC）|
+|facebook_url_sc|varchar|N|facebook_url（TC）|
 |logo_en|varchar|N|logo圖片的url（EN）|
 |logo_tc|varchar|N|logo圖片的url（SC）|
 |logo_sc|varchar|N|logo圖片的url（TC）|
