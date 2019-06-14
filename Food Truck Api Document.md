@@ -1,4 +1,24 @@
-# Food Truck Api Document 
+# Food Truck Api Document
+
+[^Author]: 
+[^Version]: 
+[^Create_at]: 
+
+[TOC]
+## 錯誤碼
+~~~http
+以http status code为准
+
+200:成功
+
+400:请求错误（都是用户的问题）
+
+401: 需要重新登录
+
+404:请求不存在
+
+500:服务端内部错误	
+~~~
 
 ## API接口詳細列表
 ### versions（ 版本信息）
@@ -6,12 +26,10 @@
   ```http
   https://foodtruck-uat.kanhan.com/json_v3/foodtruck_version_n.json
   ```
-
 - request_body
   ```json
   noen
   ```
-
 - response_body
   ```json
   {
@@ -25,16 +43,11 @@
        version_calendar: "201906101303" //營運時間版本號
   }
   ```
-  
-
 ### push_alert（推送信息）
-
 - request_url
-
   ~~~http
   https://foodtruck-uat.kanhan.com/json_v3/foodtruck_pushalert.json
   ~~~
-
 - request_body
   ~~~json
   none
@@ -51,7 +64,7 @@
     	}
     ~~~
 
-### food_truck
+### food_truck(美食車)
 - request_url
 
   ~~~http
@@ -120,23 +133,16 @@
   	}
   	}
   ~~~
-
-  
-
-### operating_location
+### operating_location（運營地點）
 - require_url
   ~~~http
   https://foodtruck-uat.kanhan.com/json_v3/foodtruck_location.json
   ~~~
-
 - request_body
-
   ~~~json
   none
   ~~~
-
 - response_body
-
   ~~~json
   {
     operating_location: {  //美食车的运营地点
@@ -176,25 +182,16 @@
        }
   }
   ~~~
-
-  
-
-### events
-
+### events(盛事及運動)
 - require_url
-
   ~~~http
   https://foodtruck-uat.kanhan.com/json_v3/foodtruck_event.json
   ~~~
-
 - require_body
-
   ~~~json
   none
   ~~~
-
 - response_body
-
   ~~~json
   {
        Location: {
@@ -244,22 +241,16 @@
        }
   }
   ~~~
-
-### operating_schedule  
+### operating_schedule  (Operating Schedule)
 - require_url
-
   ~~~http
   https://foodtruck-uat.kanhan.com/json_v3/foodtruck_calendar.json
   ~~~
-
 - require_body
-
   ~~~json
   none
   ~~~
-
 - response_body
-
   ~~~json
   operating_schedule: { //日曆
        list: [
@@ -353,23 +344,16 @@
        ]
   }
   ~~~
-
-### signature_dishs
-
+### signature_dishs（招牌菜式）
 - require_url
-
   ~~~http
   https://foodtruck-uat.kanhan.com/json_v3/foodtruck_dishes.json
   ~~~
-
 - require_body
-
   ~~~json
   none
   ~~~
-
 - response_body
-
   ~~~json
   {
    signature_dishs: {//招牌菜式
@@ -397,23 +381,16 @@
        }
   }
   ~~~
-
-### album
-
+### album（相簿）
 - require_url
-
   ~~~http
   https://foodtruck-uat.kanhan.com/json_v3/foodtruck_album.json
   ~~~
-
 - require_body
-
   ~~~json
   none
   ~~~
-
 - response_body
-
   ~~~json
   {
        Album: {//相簿
@@ -429,14 +406,14 @@
                  covePhoto: "https://foodtruck.tourism.gov.hk/pages/galleryft/galleryft.png",//相簿封面照片的url地址
                  photoList: [
                       {
-                      url: "https://foodtruck.tourism.gov.hk/pages/galleryft/ev01.png",
-                      PHID: "1",
-                      caption: {
+                      url: "https://foodtruck.tourism.gov.hk/pages/galleryft/ev01.png",//相簿中的圖片地址
+                      photo_id: "1",//相簿中的圖片id
+                      caption: {//位於照片下方的標題
                            en: "",
                            tc: "",
                            sc: ""
                       },
-                      alt: {
+                      alt: {//照片的文字替代（方便屏幕閲讀器檢測）
                            en: "Food Trucks",
                            tc: "美食車",
                            sc: "美食车"
@@ -445,6 +422,60 @@
             ]
             }
        ]
+       }
+  }
+  ~~~
+### page（頁面）
+- require_url
+  ~~~http
+  https://foodtruck-uat.kanhan.com/json_v3/foodtruck_page.json
+  ~~~
+- require_body
+  ~~~json
+  none
+  ~~~
+- response_body
+  ~~~json
+  {
+       page: {//頁面信息
+            about_us: {//“The Birth of 16 FoodTrucks”的html
+                 en: {
+                      photo: "https:\/\/foodtruck.tourism.gov.hk\/pages\/aboutus\/cover2_20181024.jpg",//宣傳照片的url
+                      url: "https:\/\/foodtruck.tourism.gov.hk\/pages\/aboutus\/aboutus_en_20181024.html"
+                 },
+                 tc: {
+                      photo: "https:\/\/foodtruck.tourism.gov.hk\/pages\/aboutus\/cover2_20181024.jpg",
+                      url: "https:\/\/foodtruck.tourism.gov.hk\/pages\/aboutus\/aboutus_tc_20181024.html"
+                 },
+                 sc: {
+                      photo: "https:\/\/foodtruck.tourism.gov.hk\/pages\/aboutus\/cover2_20181024.jpg",
+                      url: "https:\/\/foodtruck.tourism.gov.hk\/pages\/aboutus\/aboutus_sc_20181024.html"
+                 }
+            },
+            TravellingHK: {//隱私政策
+                 en: {
+                      photo: "https:\/\/foodtruck.tourism.gov.hk\/pages\/travellinghk\/cover.jpg",
+                      url: "https:\/\/foodtruck.tourism.gov.hk\/pages\/travellinghk\/travellinghk_en.html"
+                 },
+                 tc: {
+                      photo: "https:\/\/foodtruck.tourism.gov.hk\/pages\/travellinghk\/cover.jpg",
+                      url: "https:\/\/foodtruck.tourism.gov.hk\/pages\/travellinghk\/travellinghk_tc.html"
+                 },
+                 sc: {
+                      photo: "https:\/\/foodtruck.tourism.gov.hk\/pages\/travellinghk\/cover.jpg",
+                      url: "https:\/\/foodtruck.tourism.gov.hk\/pages\/travellinghk\/travellinghk_sc.html"
+                 }
+            },
+            privacy_policy: {
+                 en: "https:\/\/foodtruck.tourism.gov.hk\/pages\/privacypolicy\/privacypolicy_en.html",
+                 tc: "https:\/\/foodtruck.tourism.gov.hk\/pages\/privacypolicy\/privacypolicy_tc.html",
+                 sc: "https:\/\/foodtruck.tourism.gov.hk\/pages\/privacypolicy\/privacypolicy_sc.html"
+            },
+            disclaimer: {//免責聲明
+                 en: "https:\/\/foodtruck.tourism.gov.hk\/pages\/disclaimer\/disclalmer_en.html",
+                 tc: "https:\/\/foodtruck.tourism.gov.hk\/pages\/disclaimer\/disclalmer_tc.html",
+                 sc: "https:\/\/foodtruck.tourism.gov.hk\/pages\/disclaimer\/disclalmer_sc.html"
+            }
        }
   }
   ~~~

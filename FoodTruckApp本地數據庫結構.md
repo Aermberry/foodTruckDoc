@@ -182,24 +182,24 @@
 |字段名字 |  數據類型   |  可否爲空（Y/N）  | 注釋   |
 | :--- | :-- | :-- | :-- |
 |id|int|N|id，主鍵|
-|photo_en|varchar|N|照片的url（EN）|
-|photo_tc|varchar|N|照片的url（TC）|
-|photo_sc|varchar|N|照片的url（SC）|
-|trvhk_photo_en|varchar|N|"Travel in Hong Kong"的照片urlurl（TC）|
-|trvhk_photo_tc|varchar|N|"Travel in Hong Kong"的照片url（SC）|
-|trvhk_photo_sc|varchar|N|"Travel in Hong Kong"的照片url（EN）|
-|trvhk_url_en|varchar|N|"Travel in Hong Kong"的html（EN）|
-|trvhk_url_tc|varchar|N|"Travel in Hong Kong"的html（TC）|
-|trvhk_url_sc|varchar|N|"Travel in Hong Kong"的html（SC）|
-|priv_en|varchar|N|"Privacy Policy"的html（EN）|
-|priv_tc|varchar|N|"Privacy Policy"的html（TC）|
-|priv_sc|varchar|N|"Privacy Policy"的html（SC）|
-|dis_en|varchar|N|"Disclaimer"的html（EN）|
-|dis_tc|varchar|N|"Disclaimer"的html（TC）|
-|dis_sc|varchar|N|"Disclaimer"的html（SC）|
-|aboutus_url_en|varchar|N|“The Birth of 16 FoodTrucks”的html(EN)|
-|aboutus_url_tc|varchar|N|“The Birth of 16 FoodTrucks”的html(TC)|
-|aboutus_url_sc|varchar|N|“The Birth of 16 FoodTrucks”的html(SC)|
+|photo_en|varchar|N|宣傳照片的url（EN）|
+|photo_tc|varchar|N|宣傳照片的url（TC）|
+|photo_sc|varchar|N|宣傳照片的url（SC）|
+|travelling_HK_photo_en|varchar|N|"Travel in Hong Kong"的照片urlurl（TC）|
+|travelling_HK_photo_tc|varchar|N|"Travel in Hong Kong"的照片url（SC）|
+|travelling_HK_photo_sc|varchar|N|"Travel in Hong Kong"的照片url（EN）|
+|travelling_HK_url_en|varchar|N|"Travel in Hong Kong"的html（EN）|
+|travelling_HK_url_tc|varchar|N|"Travel in Hong Kong"的html（TC）|
+|travelling_HK_url_sc|varchar|N|"Travel in Hong Kong"的html（SC）|
+|privacy_policy_en|varchar|N|"Privacy Policy"的html（EN）|
+|privacy_policy_tc|varchar|N|"Privacy Policy"的html（TC）|
+|privacy_policy_sc|varchar|N|"Privacy Policy"的html（SC）|
+|disclaimer_en|varchar|N|"Disclaimer"的html（EN）|
+|disclaimer_tc|varchar|N|"Disclaimer"的html（TC）|
+|disclaimer_sc|varchar|N|"Disclaimer"的html（SC）|
+|about_us_url_en|varchar|N|“The Birth of 16 FoodTrucks”的html(EN)|
+|about_us_url_tc|varchar|N|“The Birth of 16 FoodTrucks”的html(TC)|
+|about_us_url_sc|varchar|N|“The Birth of 16 FoodTrucks”的html(SC)|
 |last_update|DATETIME|N|最後更新的時間|
 
 ## versions
