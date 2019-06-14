@@ -22,7 +22,7 @@
 |alt_sc|varchar|N|照片的文字替代(SC)（方便屏幕閲讀器檢測）|
 |last_update|DATETIME|N|最後跟新日期|
 
-## warning_texts
+## push_alerts
 
 警告表：記錄發出的警告信息
 
@@ -46,8 +46,8 @@
 | business_hours_describe_en | varchar | N | 描述營業時間信息（EN） |
 | business_hours_describe_tc | varchar | N | 描述營業時間信息（TC） |
 |business_hours_describe_sc|varchar|N|描述營業時間信息（SC）|
-|event_id|int|N|盛事事件id(關聯到events表的id)|
-|operating_location_id|int|N|ID of operating location 經營地點的ID(關聯到locations表的id)|
+|event_id|int|N|盛事id(關聯到events表的id)|
+|operating_location_id|int|N|ID of operating location 運營地點的ID(關聯到locations表的id)|
 |english_version|float|N|版本號信息（英文）|
 |traditional_chinese version|float|N|版本號信息（TC）|
 |simplified_chinese_version|float|N|版本號信息（SC）|
@@ -71,17 +71,17 @@
 |last_update|DATETIME|N|最後更新時間|
 
 ## events
-盛事信息表：記錄盛事活動信息
+盛事信息表：記錄盛事信息
 
 |      字段名|數據類型      |可否爲空（Y/N）      | 注釋     |
 | :-- | :-- | :-- | :-- |
-| id | int |    N  | 盛事活動id，主鍵 |
-| is_new | bool |    N  | 提醒此爲新的盛事活動:<br>**1** 代表新内容 <br>**0** 代表沒有新内容 |
+| id | int |    N  | 盛事id，主鍵 |
+| is_new | bool |    N  | 提醒此爲新的盛事:<br>**1** 代表新内容 <br>**0** 代表沒有新内容 |
 | latitude | float |     N | Latitude 緯度 |
 |longitude|float|N|longitude 經度|
-|name_en|varchar|N|盛事活動名字（EN）|
-|name_tc|varchar|N|盛事活動名字（TC）|
-|name_sc|varchar|N|盛事活動名字（SC）|
+|name_en|varchar|N|盛事名字（EN）|
+|name_tc|varchar|N|盛事名字（TC）|
+|name_sc|varchar|N|盛事名字（SC）|
 |location_en|varchar|N|位置信息（EN）|
 |location_tc|varchar|N|位置信息（TC）|
 |location_sc|varchar|N|位置信息（SC）|
