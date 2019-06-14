@@ -9,8 +9,8 @@
 |name_en|varchar|N|相簿名字(EN)|
 |name_tc|varchar|N|相簿名字(TC)|
 |name_sc|varchar|N|相簿名字(SC)|
-| coverphoto_en | varchar | N | 相簿封面照片的url地址 |
-| coverphoto_tc | varchar | N | 相簿封面照片的url地址 |
+| coverphoto_en | varchar | N | 相簿封面照片的url地址（EN） |
+| coverphoto_tc | varchar | N | 相簿封面照片的url地址（TC） |
 | coverphoto_sc | varchar | N | 相簿封面照片的url地址 |
 
 ## photos

@@ -419,14 +419,14 @@
        Album: {//相簿
        list: [
             {
-                 ABID: "1",//相簿的id
+                 id: "1",//相簿的id
              event_id: "",//盛事的id
-                 name: {
+                 name: {//相簿名字
                       en: "Food Trucks",
                       tc: "美食車",
                       sc: "美食车"
                  },
-                 covePhoto: "https://foodtruck.tourism.gov.hk/pages/galleryft/galleryft.png",
+                 covePhoto: "https://foodtruck.tourism.gov.hk/pages/galleryft/galleryft.png",//相簿封面照片的url地址
                  photoList: [
                       {
                       url: "https://foodtruck.tourism.gov.hk/pages/galleryft/ev01.png",
@@ -443,7 +443,6 @@
                       }
                  }
             ]
-            hitcounturl: ""
             }
        ]
        }
