@@ -286,7 +286,7 @@
                       },
                       {
                   		operating_location_id: String,
-                           EVID: "",
+                           EVID: String,
                            foodtruckList: [
                                 {
                                   food_truck_id: String,
@@ -403,7 +403,7 @@
        list: [
             {
                  id: String,//相簿的id
-             event_id: null,//盛事的id
+             event_id: null| String,//盛事的id
                  name: {//相簿名字
                       en:  String,
                       tc:  String,
