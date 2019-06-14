@@ -21,18 +21,14 @@
 ~~~
 ## API URL
 
-~~~
-前綴（url）：https://foodtruck-uat.kanhan.com/json_v3
+~~~http
+UAT Server：https://foodtruck-uat.kanhan.com/json_v3
 ~~~
 ## API接口詳細列表
 ### versions（ 版本信息）
-- request_url
+- request_absoult
   ```http
   get /foodtruck_version_n.json
-  ```
-- request_body
-  ```json
-  noen
   ```
 - response_body
   ```json
@@ -48,7 +44,7 @@
   }
   ```
 ### 獲取警告
-- request_url
+- request_absoult
   ~~~http
   get /foodtruck_pushalert.json
   ~~~
@@ -68,7 +64,7 @@
   ~~~
 
 ### 獲取美食車
-- request_url
+- request_absoult
 
   ~~~http
   get /foodtruck_foodtruck.json
@@ -94,35 +90,35 @@
                        tc: String,	//美食车的招牌菜式（TC）
                        sc: String		//美食车的招牌菜式（SC）
                    },
-                   photo: {			//美食車封面圖的url
-                       en: absoult,	//美食車封面圖的url（EN）
-                       tc: absoult,	//美食車封面圖的url（TC）
-                       sc: absoult	//美食車封面圖的url（SC）
+                   photo: {			//美食車封面圖的absoult
+                       en: String,	//美食車封面圖的absoult（EN）
+                       tc: String,	//美食車封面圖的absoult（TC）
+                       sc: String	//美食車封面圖的absoult（SC）
                    },
-                   logo: {			//logo圖片的url
-                       en: absoult,	//logo圖片的url(EN)
-                       tc: absoult,	//logo圖片的url(TC)
-                       sc: absoult	//logo圖片的url(SC)
+                   logo: {			//logo圖片的absoult
+                       en: String,	//logo圖片的absoult(EN)
+                       tc: String,	//logo圖片的absoult(TC)
+                       sc: String	//logo圖片的absoult(SC)
                    },
                    about: {			//美食車簡介
-                       en: absoult,	//美食車簡介（EN）
-                       tc: absoult,	//美食車簡介（TC）
-                       sc: absoult	//美食車簡介（SC）
+                       en: String,	//美食車簡介（EN）
+                       tc: String,	//美食車簡介（TC）
+                       sc: String	//美食車簡介（SC）
                    },
                    menu: {			//美食車菜單
-                       en: absoult,	//美食車菜單（EN）
-                       tc: absoult,	//美食車菜單（TC）
-                       sc: absoult	//美食車菜單（SC）
+                       en: String,	//美食車菜單（EN）
+                       tc: String,	//美食車菜單（TC）
+                       sc: String	//美食車菜單（SC）
                    },
-                   twitter: {			//twitter_url
-                       en: absoult,	//twitter_url（EN）
-                       tc: absoult,	//twitter_url（TC）
-                       sc: absoult	//twitter_url（SC）
+                   twitter: {			//twitter_absoult
+                       en: String,	//twitter_absoult（EN）
+                       tc: String,	//twitter_absoult（TC）
+                       sc: String	//twitter_absoult（SC）
                    },
-                   facebook: {		//facebook_url
-                       en: absoult,	//facebook_url（EN）
-                       tc: absoult,	//facebook_url（TC）
-                       sc: absoult	//facebook_url（SC）
+                   facebook: {		//facebook_absoult
+                       en: String,	//facebook_absoult（EN）
+                       tc: String,	//facebook_absoult（TC）
+                       sc: String	//facebook_absoult（SC）
                    }
                }
            ]
@@ -130,13 +126,9 @@
   }
   ~~~
 ### 獲取運營地點
-- request_url
+- request_absoult
   ~~~http
   get /foodtruck_location.json
-  ~~~
-- request_body
-  ~~~json
-  none
   ~~~
 - response_body
   ~~~json
@@ -150,30 +142,30 @@
                   					//1:新内容
                   latitude: String,	//緯度
                   longitude: String,	//經度
-                  name: {				//地方名字
-                      en: String,		//地方名字（EN）
-                      tc: String,		//地方名字（TC）
-                      sc: String		//地方名字（SC）
+                  name: {				//運營地點名字
+                      en: String,		//運營地點名字（EN）
+                      tc: String,		//運營地點名字（TC）
+                      sc: String		//運營地點名字（SC）
                   },
                   download_map: {		//離綫地圖
-                      en: absoult,	//離綫地圖的url（EN）
-                      tc: absoult,	//離綫地圖的url（TC）
-                      sc: absoult		//離綫地圖的url（SC）
+                      en: String,	//離綫地圖的absoult（EN）
+                      tc: String,	//離綫地圖的absoult（TC）
+                      sc: String		//離綫地圖的absoult（SC）
                   },
-                  photo: {			//景點圖片的url
-                      en: absoult,	//景點圖片的url(EN)
-                      tc: absoult,	//景點圖片的url(TC)
-                      sc: absoult		//景點圖片的url(SC)
+                  photo: {			//運營圖片的absoult
+                      en: String,	//運營圖片的absoult(EN)
+                      tc: String,	//運營圖片的absoult(TC)
+                      sc: String		//運營圖片的absoult(SC)
                   },
-                  logo: {				//logo圖片的url
-                      en: absoult,	//logo圖片的url(EN)
-                      tc: absoult,	//logo圖片的url(TC)
-                      sc: absoult		//logo圖片的url(SC)
+                  logo: {				//logo圖片的absoult
+                      en: String,	//logo圖片的absolute absoult(EN)
+                      tc: String,	//logo圖片的absoult(TC)
+                      sc: String		//logo圖片的absoult(SC)
                   },
-                  about: {			//景點介紹的html
-                      en: absoult,	//景點介紹的html（EN）
-                      tc: absoult,	//景點介紹的html（TC）
-                      sc: absoult		//景點介紹的html（SC）
+                  about: {			//運營介紹的html
+                      en: String,	//運營介紹的html（EN）
+                      tc: String,	//運營介紹的html（TC）
+                      sc: String		//運營介紹的html（SC）
                   }
               }
           ]
@@ -181,7 +173,7 @@
   }
   ~~~
 ### 獲取盛事及運動
-- request_url
+- request_absoult
   ~~~http
   get /foodtruck_event.json
   ~~~
@@ -197,7 +189,7 @@
                   					// 0 代表沒有新内容
                   lat: String,		//緯度
                   long: String,		//經度
-                  name: { 			//盛事活動名字
+                  name: { 			//盛事名字
                       en: String,
                       tc: String,
                       sc: String
@@ -213,24 +205,24 @@
                       sc: String
                   },
                   download_map: {		//下載地圖
-                      en: absoult,
-                      tc: absoult,
-                      sc: absoult
+                      en: String,
+                      tc: String,
+                      sc: String
               },
                   photo: {			//活動主題圖片
-                      en: absoult,
-                      tc: absoult,
-                      sc: absoult
+                      en: String,
+                      tc: String,
+                      sc: String
               },
-              logo: {					//logo圖片的url
-                  en: absoult,
-                  tc: absoult,
-                  sc: absoult
+              logo: {					//logo圖片的absoult
+                  en: String,
+                  tc: String,
+                  sc: String
               },
               about: {				//活動簡介
-                  en: absoult,
-                  tc: absoult,
-                  sc: absoult
+                  en: String,
+                  tc: String,
+                  sc: String
               }
               }
           ]
@@ -238,15 +230,10 @@
   }
   ~~~
 ### 獲取運營時間
-- request_url
+- request_absoult
   ~~~http
   get /foodtruck_calendar.json
   ~~~
-- require_body
-  ~~~json
-  none
-  ~~~
-  
 - response_body
   ~~~json
   operating_schedule: {									//日曆
@@ -348,18 +335,14 @@
   }
   ~~~
 ### 獲取招牌菜式
-- request_url
+- request_absoult
   ~~~http
   get /foodtruck_dishes.json
-  ~~~
-- require_body
-  ~~~json
-  none
   ~~~
 - response_body
   ~~~json
   {
-      Dishs: {				//招牌菜式
+      Dishs: {						//招牌菜式
           list: [
               {
                   SDID: String,		//美食車招牌菜id
@@ -374,10 +357,10 @@
                       tc: String,
                       sc: String
                  },
-                  photo: {			//文字圖片的url
-                      en: absoult,
-                      tc: absoult,
-                      sc: absoult
+                  photo: {			//文字圖片的absoult
+                      en: String,
+                      tc: String,
+                      sc: String
                   },
               }
           ]
@@ -385,13 +368,9 @@
   }
   ~~~
 ### 獲取相簿
-- request_url
+- request_absoult
   ~~~http
   get /foodtruck_album.json
-  ~~~
-- require_body
-  ~~~json
-  none
   ~~~
 - response_body
   ~~~json
@@ -399,18 +378,18 @@
       Album: {								//相簿
           list: [
               {
-                  ABID: String,					//相簿的id
-                  EVID: null| String,		//盛事id
+                  ABID: String,				//相簿的id
+                  EVID: null| String,			//盛事id
                   name: {						//相簿名字
                       en:  String,
                       tc:  String,
                       sc:  String
                   },
-                  covePhoto: absoult,			//相簿封面照片的url地址
+                  covePhoto: String,			//相簿封面照片的absoult地址
                   photoList: [
                       {
-                          url: absoult,		//相簿中的圖片地址
-                          PHID: String,	//相簿中的圖片id
+                          absoult: String,		//相簿中的圖片地址
+                          PHID: String,		//相簿中的圖片id
                           caption: {			//位於照片下方的標題
                               en: String,
                               tc: String,
@@ -429,13 +408,9 @@
   }
   ~~~
 ### 獲取頁面
-- request_url
+- request_absoult
   ~~~http
   get /foodtruck_page.json
-  ~~~
-- require_body
-  ~~~json
-  none
   ~~~
 - response_body
   ~~~json
@@ -443,41 +418,41 @@
       Page: {								//頁面信息
           AboutUs: {					    //“The Birth of 16 FoodTrucks”的html
               en: {
-                  photo: absoult,			//宣傳照片的url
-                  url: absoult
+                  photo: String,			//宣傳照片的absoult
+                  absoult: String
               },
               tc: {
-                  photo: absoult,
-                  url: absoult
+                  photo: String,
+                  absoult: String
               },
               sc: {
-                  photo: absoult,
-                  url: absoult
+                  photo: String,
+                  absoult: String
               }
           },
           TravellingHK: {					//隱私政策
               en: {
-                  photo: absoult,
-                  url: absoult
+                  photo: String,
+                  absoult: String
               },
               tc: {
-                  photo: absoult,
-                      url: absoult
+                  photo: String,
+                      absoult: String
                  },
                  sc: {
-                      photo: absoult,
-                      url: absoult
+                      photo: String,
+                      absoult: String
                  }
             },
             PrivacyPolicy: {
-                 en: absoult,
-                 tc: absoult,
-                 sc: absoult
+                 en: String,
+                 tc: String,
+                 sc: String
             },
             Disclaimer: {					//免責聲明
-                 en: absoult,
-                 tc: absoult,
-                 sc: absoult
+                 en: String,
+                 tc: String,
+                 sc: String
             }
        }
   }
