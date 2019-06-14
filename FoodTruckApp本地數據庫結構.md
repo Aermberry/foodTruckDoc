@@ -9,22 +9,18 @@
 |name_en|varchar|N|相簿名字(EN)|
 |name_tc|varchar|N|相簿名字(TC)|
 |name_sc|varchar|N|相簿名字(SC)|
-| coverphoto_en | varchar | N | 相簿封面照片的url地址（EN） |
-| coverphoto_tc | varchar | N | 相簿封面照片的url地址（TC） |
-| coverphoto_sc | varchar | N | 相簿封面照片的url地址 |
-
-## photos
-照片表：記錄各個相簿中的照片信息
-
-| 字段名 | 數據類型 | 可否爲空（Y/N） |    注釋    |
-| :---- | :------ | :------------- | :-------- |
-|id|int|N|圖片的id，主鍵|
-|  url   | varchar  |        N        | 美食車照片鏈接 |
-|caption_en|varchar|N|標題（EN）|
-|caption_tc|varchar|N|標題（TC）|
-|caption_sc|varchar|N|標題（SC）|
-|album_id|int|N|相簿的id(關聯到albums表中的id)|
-|last_update|DATETIME|N|最後更新的時間|
+| coverphoto_en | varchar | N | 相簿的圖標圖片url（（EN） |
+| coverphoto_tc | varchar | N | 相簿的圖標圖片的url（TC） |
+| coverphoto_sc | varchar | N | 相簿的圖標圖片的url（SC） |
+|url|varchar|N|相簿中的圖片地址|
+|photo_id|varchar|N|相簿中的圖片id|
+|caption_en|varchar|N|位於照片下方的標題（EN）|
+|caption_tc|varchar|N|位於照片下方的標題（TC）|
+|caption_sc|varchar|N|位於照片下方的標題（SC）|
+|alt_en|varchar|N|照片的文字替代(EN)（方便屏幕閲讀器檢測）|
+|alt_tc|varchar|N|照片的文字替代(TC)（方便屏幕閲讀器檢測）|
+|alt_sc|varchar|N|照片的文字替代(SC)（方便屏幕閲讀器檢測）|
+|last_update|DATETIME|N|最後跟新日期|
 
 ## warning_texts
 
