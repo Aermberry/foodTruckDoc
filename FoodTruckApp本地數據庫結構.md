@@ -13,8 +13,6 @@
 | coverphoto_tc | varchar | N | 相簿封面照片的url地址 |
 | coverphoto_sc | varchar | N | 相簿封面照片的url地址 |
 
-
-
 ## photos
 照片表：記錄各個相簿中的照片信息
 

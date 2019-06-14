@@ -181,3 +181,273 @@
 
 ### events
 
+- require_url
+
+  ~~~http
+  https://foodtruck-uat.kanhan.com/json_v3/foodtruck_event.json
+  ~~~
+
+- require_body
+
+  ~~~json
+  none
+  ~~~
+
+- response_body
+
+  ~~~json
+  {
+       Location: {
+       list: [
+            {
+                 id: "11",//盛事活動id
+              is_new: "0",// 提醒此爲新的盛事活動:1 代表新内容 0 代表沒有新内容
+            latitude: "22.283841",//緯度
+           longitude: "114.162073",//經度
+                 name: { //盛事活動名字
+                      en: "Hong Kong Dragon Boat Carnival",
+                      tc: "「香港龍舟嘉年華」",
+                      sc: "「香港龙舟嘉年华」"
+                 },
+                 location: { //位置信息
+                      en: "Central Harbourfront Event Space",
+                      tc: "中環海濱活動空間",
+                      sc: "中环海滨活动空间"
+                 },
+                 desc: {//活動開放時間日期
+                      en: "Date:\n 14 June 2019\n\nBusiness Hour:\n1:00pm - 9:00pm\n\nDate:\n 15-16 June 2019\n\nBusiness Hour:\n10:00am - 9:00pm",
+                      tc: "日期:\n 2019年6月14日\n\n營業時間:\n1:00pm - 9:00pm\n\n日期:\n 2019年6月15-16日\n\n營業時間:\n10:00am - 9:00pm",
+                      sc: "日期:\n 2019年6月14日\n\n营业时间:\n1:00pm - 9:00pm\n\n日期:\n 2019年6月15-16日\n\n营业时间:\n10:00am - 9:00pm"
+                 },
+                download_map: {//下載地圖
+                      en: "https://foodtruck.tourism.gov.hk/pages/event/map_DragonBoat.png",
+                      tc: "https://foodtruck.tourism.gov.hk/pages/event/map_DragonBoat.png",
+                      sc: "https://foodtruck.tourism.gov.hk/pages/event/map_DragonBoat.png"
+                 },
+                 photo: {//活動主題圖片
+                      en: "https://foodtruck.tourism.gov.hk/pages/event/event0614_tc.jpg",
+                      tc: "https://foodtruck.tourism.gov.hk/pages/event/event0614_tc.jpg",
+                      sc: "https://foodtruck.tourism.gov.hk/pages/event/event0614_sc.jpg"
+                 },
+                 logo: {//logo圖片的url
+                      en: "https://foodtruck.tourism.gov.hk/pages/event/event0614_tc.png",
+                      tc: "https://foodtruck.tourism.gov.hk/pages/event/event0614_tc.png",
+                      sc: "https://foodtruck.tourism.gov.hk/pages/event/event0614_sc.png"
+                 },
+                 about: {//活動簡介
+                      en: "https://foodtruck.tourism.gov.hk/pages/event/event0614_en.html",
+                      tc: "https://foodtruck.tourism.gov.hk/pages/event/event0614_tc.html",
+                      sc: "https://foodtruck.tourism.gov.hk/pages/event/event0614_sc.html"
+                 }
+            }
+       ]
+       }
+  }
+  ~~~
+
+### operating_schedule  
+- require_url
+
+  ~~~http
+  https://foodtruck-uat.kanhan.com/json_v3/foodtruck_calendar.json
+  ~~~
+
+- require_body
+
+  ~~~json
+  none
+  ~~~
+
+- response_body
+
+  ~~~json
+  operating_schedule: { //日曆
+       list: [
+            {
+                date: "2019-06-14",//日期  格式：YYYY-MM-DD
+                 locationEventList: [//
+                      {
+          				operating_location_id: "",//ID of operating location 經營地點的ID(關聯到locations表的id)
+                           event_id: "11",//盛事事件id(關聯到events表的id)
+                           foodtruckList: [
+                                {
+                             food_truck_id: "1",//美食車的id（關聯到food_trucks表中的id）
+                                     shift: null,//晝夜更替 
+                                    //"morning" —> the foodtruck work on morning
+                                    // "night" —> the foodtruck work on night
+                                    // "full_day" —> the foodtruck work on full day
+                                     business_hours_describe: {
+                                          en: "Date:\n 14 June 2019\n\nBusiness Hour:\n1:00pm - 9:00pm\n\nDate:\n 15-16 June 2019\n\nBusiness Hour:\n10:00am - 9:00pm",
+                                         //描述營業時間信息（EN）
+                                          tc: "日期:\n 2019年6月14日\n\n營業時間:\n1:00pm - 9:00pm\n\n日期:\n 2019年6月15-16日\n\n營業時間:\n10:00am - 9:00pm",
+                                         //描述營業時間信息（TC）
+                                          sc: "日期:\n 2019年6月14日\n\n营业时间:\n1:00pm - 9:00pm\n\n日期:\n 2019年6月15-16日\n\n营业时间:\n10:00am - 9:00pm"
+                                         //描述營業時間信息（SC）
+                                     }
+                                }
+                           ]
+                      },
+                      {
+                  		operating_location_id: "0",
+                           EVID: "",
+                           foodtruckList: [
+                                {
+                                  food_truck_id: "6",
+                                     shift: null,
+                                     business_hours_describe: {
+                                          en: "Out of service today",
+                                          tc: "是日未能提供服務",
+                                          sc: "是日未能提供服务"
+                                     }
+                                }
+                           ]
+                      },
+                      {
+                           operating_location_id: "1",
+                           EVID: "",
+                           foodtruckList: [
+                                {
+                                     FTID: "7",
+                                     shift: null,
+                                     business_hours_describe: {
+                                          en: "Business Hour:\n11:30am - 6:00pm",
+                                          tc: "營業時間:\n11:30am - 6:00pm",
+                                          sc: "营业时间:\n11:30am - 6:00pm"
+                                     }
+                                },
+                                     FTID: "10",
+                                     shift: "n",
+                                     business_hours_describe: {
+                                          en: "Business Hour:\n4:00pm - 9:00pm",
+                                          tc: "營業時間:\n4:00pm - 9:00pm",
+                                          sc: "营业时间:\n4:00pm - 9:00pm"
+                                     }
+                                },
+                           ]
+                      },
+                      {
+                           operating_location_id: "2",
+                           EVID: "",
+                           foodtruckList: [
+                                {
+                                     food_truck_id: "2",
+                                     shift: null,
+                                     business_hours_describe: {
+                                          en: "Business Hour:\n11:30am - 6:00pm",
+                                          tc: "營業時間:\n11:30am - 6:00pm",
+                                          sc: "营业时间:\n11:30am - 6:00pm"
+                                     }
+                                },
+                                     food_truck_id: "10",
+                                     shift: "m",
+                                     business_hours_describe: {
+                                          en: "Business Hour:\n10:00am - 1:00pm",
+                                          tc: "營業時間:\n10:00am - 1:00pm",
+                                          sc: "营业时间:\n10:00am - 1:00pm"
+                                     }
+                                },
+                           ]
+                      }
+                 ]
+            }
+       ]
+  }
+  ~~~
+
+### signature_dishs
+
+- require_url
+
+  ~~~http
+  https://foodtruck-uat.kanhan.com/json_v3/foodtruck_dishes.json
+  ~~~
+
+- require_body
+
+  ~~~json
+  none
+  ~~~
+
+- response_body
+
+  ~~~json
+  {
+   signature_dishs: {//招牌菜式
+       list: [
+            {
+                 SDID: "12",//美食車招牌菜id
+                 FTID: "12",//美食車id
+                 name: {//美食车的招牌菜式名字
+                      en: "The Notorious P.I.G.",
+                      tc: "手撕豬肉漢堡",
+                      sc: "手撕猪肉汉堡"
+                 },
+                 company: {//公司名
+                      en: "Beef & Liberty",
+                      tc: "Beef & Liberty",
+                      sc: "Beef & Liberty"
+                 },
+                 photo: {//文字圖片的url
+                      en: "https:\/\/foodtruck.tourism.gov.hk\/pages\/dish\/Ftid12_D6.jpg",
+                      tc: "https:\/\/foodtruck.tourism.gov.hk\/pages\/dish\/Ftid12_D6.jpg",
+                      sc: "https:\/\/foodtruck.tourism.gov.hk\/pages\/dish\/Ftid12_D6.jpg"
+                 },
+            }
+       ]
+       }
+  }
+  ~~~
+
+### album
+
+- require_url
+
+  ~~~http
+  https://foodtruck-uat.kanhan.com/json_v3/foodtruck_album.json
+  ~~~
+
+- require_body
+
+  ~~~json
+  none
+  ~~~
+
+- response_body
+
+  ~~~json
+  {
+       Album: {//相簿
+       list: [
+            {
+                 ABID: "1",//相簿的id
+             event_id: "",//盛事的id
+                 name: {
+                      en: "Food Trucks",
+                      tc: "美食車",
+                      sc: "美食车"
+                 },
+                 covePhoto: "https://foodtruck.tourism.gov.hk/pages/galleryft/galleryft.png",
+                 photoList: [
+                      {
+                      url: "https://foodtruck.tourism.gov.hk/pages/galleryft/ev01.png",
+                      PHID: "1",
+                      caption: {
+                           en: "",
+                           tc: "",
+                           sc: ""
+                      },
+                      alt: {
+                           en: "Food Trucks",
+                           tc: "美食車",
+                           sc: "美食车"
+                      }
+                 }
+            ]
+            hitcounturl: ""
+            }
+       ]
+       }
+  }
+  ~~~
+
+  
