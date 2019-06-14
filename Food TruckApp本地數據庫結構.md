@@ -142,22 +142,22 @@
 
 | 字段名字 | 數據類型 | 可否爲空（Y/N） |注釋      |
 | :------ | :------ | :------------- | :-- |
-| id | int | N |ID of operating location 經營地點的ID，主鍵 |
+| id | int | N |ID of operating location 運營地點的ID，主鍵 |
 |  is_new     | bool |                 N| 提醒有新的區域可以有美食車服務:<br> 1 :新内容 <br>0:沒有新内容 |
 |     latitude     | float |                 N| Latitude 緯度 |
 |longitude|float|N|longitude 經度|
-|name_en|varchar|N|經營地點名字（EN）|
-|name_tc|varchar|N|經營地點名字（TC）|
-|name_sc|varchar|N|經營地點名字（SC）|
+|name_en|varchar|N|運營地點名字（EN）|
+|name_tc|varchar|N|運營地點名字（TC）|
+|name_sc|varchar|N|運營地點名字（SC）|
 |download_map_en|varchar|N|離綫地圖的url（EN）|
 |download_map_tc|varchar|N|離綫地圖的url（TC）|
 |download_map_sc|varchar|N|離綫地圖的url（TC）|
-|photo_en|varchar|N|景點圖片的url（EN）|
-|photo_tc|varchar|N|景點圖片的url（TC）|
-|photo_sc|varchar|N|景點圖片的url（SC）|
-|about_en|varchar|N|景點介紹的html（EN）|
-|about_tc|varchar|N|景點介紹的html（TC）|
-|about_sc|varchar|N|景點介紹的html（SC）|
+|photo_en|varchar|N|運營圖片的url（EN）|
+|photo_tc|varchar|N|運營圖片的url（TC）|
+|photo_sc|varchar|N|運營圖片的url（SC）|
+|about_en|varchar|N|運營介紹的html（EN）|
+|about_tc|varchar|N|運營介紹的html（TC）|
+|about_sc|varchar|N|運營介紹的html（SC）|
 |logo_en|varchar|N|logo圖片的url（EN）|
 |logo_tc|varchar|N|logo圖片的url（TC）|
 |logo_sc|varchar|N|logo圖片的url（SC）|
