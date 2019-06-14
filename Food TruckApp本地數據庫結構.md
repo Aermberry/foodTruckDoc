@@ -146,9 +146,9 @@
 |  is_new     | bool |                 N| 提醒有新的區域可以有美食車服務:<br> 1 :新内容 <br>0:沒有新内容 |
 |     latitude     | float |                 N| Latitude 緯度 |
 |longitude|float|N|longitude 經度|
-|name_en|varchar|N|地方名字（EN）|
-|name_tc|varchar|N|地方名字（TC）|
-|name_sc|varchar|N|地方名字（SC）|
+|name_en|varchar|N|經營地點名字（EN）|
+|name_tc|varchar|N|經營地點名字（TC）|
+|name_sc|varchar|N|經營地點名字（SC）|
 |download_map_en|varchar|N|離綫地圖的url（EN）|
 |download_map_tc|varchar|N|離綫地圖的url（TC）|
 |download_map_sc|varchar|N|離綫地圖的url（TC）|
