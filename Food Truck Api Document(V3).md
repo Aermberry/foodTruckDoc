@@ -89,7 +89,7 @@
   	FoodTruck: {
   	     list: [
   	     {
-  	          id: int,//food_truck_id 美食車id
+  	          id: String,//food_truck_id 美食車id
   	          is_new: bool,//提醒有新的美食車提供服務:
                			  //0:沒有新内容 
                             //1 :新内容
@@ -155,8 +155,8 @@
             {
                  id: int,// ID of operating location 經營地點的ID
               is_new: bool,//提醒有新的區域可以有美食車服務:0：沒有新内容 1:新内容 
-             latitude: "22.284134",//緯度
-             longitude: "114.174035",//經度
+             latitude: String,//緯度
+             longitude: String,//經度
                  name: {//地方名字
                       en: String,//地方名字（EN）
                       tc: String,//地方名字（TC）
@@ -202,10 +202,10 @@
        Location: {
        list: [
             {
-                 id: "11",//盛事活動id
+                 id: String,//盛事活動id
               is_new: bool,// 提醒此爲新的盛事活動:1 代表新内容 0 代表沒有新内容
-            latitude: "22.283841",//緯度
-           longitude: "114.162073",//經度
+            latitude: String,//緯度
+           longitude: String,//經度
                  name: { //盛事活動名字
                       en: String,
                       tc: String,
@@ -265,10 +265,10 @@
                  locationEventList: [//
                       {
           				operating_location_id: "",//ID of operating location 經營地點的ID(關聯到locations表的id)
-                           event_id: "11",//盛事事件id(關聯到events表的id)
+                           event_id: String,//盛事事件id(關聯到events表的id)
                            foodtruckList: [
                                 {
-                             food_truck_id: "1",//美食車的id（關聯到food_trucks表中的id）
+                             food_truck_id: String,//美食車的id（關聯到food_trucks表中的id）
                                      shift: null|bool,//晝夜更替 
                                     //"morning" —> the foodtruck work on morning
                                     // "night" —> the foodtruck work on night
@@ -285,11 +285,11 @@
                            ]
                       },
                       {
-                  		operating_location_id: "0",
+                  		operating_location_id: String,
                            EVID: "",
                            foodtruckList: [
                                 {
-                                  food_truck_id: "6",
+                                  food_truck_id: String,
                                      shift: null|bool,
                                      business_hours_describe: {
                                           en: String,
@@ -300,11 +300,11 @@
                            ]
                       },
                       {
-                           operating_location_id: "1",
-                           EVID: "",
+                           operating_location_id: String,
+                           EVID: String,
                            foodtruckList: [
                                 {
-                                     FTID: "7",
+                                     FTID: String,
                                      shift: null|bool,
                                      business_hours_describe: {
                                           en: String,
@@ -312,8 +312,8 @@
                                           sc: String
                                      }
                                 },
-                                     FTID: "10",
-                                     shift: "n",
+                                     FTID: String,
+                                     shift: String,
                                      business_hours_describe: {
                                           en: String,
                                           tc: String,
@@ -323,11 +323,11 @@
                            ]
                       },
                       {
-                           operating_location_id: "2",
-                           EVID: "",
+                           operating_location_id: String,
+                           EVID: String,
                            foodtruckList: [
                                 {
-                                     food_truck_id: "2",
+                                     food_truck_id: String,
                                      shift: null|bool,
                                      business_hours_describe: {
                                           en: String,
@@ -335,7 +335,7 @@
                                           sc: String
                                      }
                                 },
-                                     food_truck_id: "10",
+                                     food_truck_id: String,
                                      shift: null|bool,
                                      business_hours_describe: {
                                           en: String,
@@ -365,8 +365,8 @@
    signature_dishs: {//招牌菜式
        list: [
             {
-                 SDID: "12",//美食車招牌菜id
-                 FTID: "12",//美食車id
+                 SDID: String,//美食車招牌菜id
+                 FTID: String,//美食車id
                  name: {//美食车的招牌菜式名字
                       en: String,
                       tc: String,
@@ -402,7 +402,7 @@
        Album: {//相簿
        list: [
             {
-                 id: "1",//相簿的id
+                 id: String,//相簿的id
              event_id: null,//盛事的id
                  name: {//相簿名字
                       en:  String,
@@ -413,11 +413,11 @@
                  photoList: [
                       {
                       url: String,//相簿中的圖片地址
-                      photo_id: "1",//相簿中的圖片id
+                      photo_id: String,//相簿中的圖片id
                       caption: {//位於照片下方的標題
-                           en: "",
-                           tc: "",
-                           sc: ""
+                           en: String,
+                           tc: String,
+                           sc: String
                       },
                       alt: {//照片的文字替代（方便屏幕閲讀器檢測）
                            en: String,
