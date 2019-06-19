@@ -9,7 +9,8 @@
 |./main.dart|函數入口文件|
 |./assets/|資源|
 |./assets/images|圖片|
-|./router|路由管理|
+|./config|配置項|
+|./config/router|路由管理|
 |./util|公用的方法/控件庫|
 |./util/state|狀態管理器|
 |./util/widgets|公用的控件|
