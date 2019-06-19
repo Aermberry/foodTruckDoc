@@ -11,6 +11,6 @@
 |./assets/images|圖片|
 |./router|路由管理|
 |./util|公用的方法/控件庫|
-|./state|狀態管理器|
-|./widgets|公用的控件|
+|./util/state|狀態管理器|
+|./util/widgets|公用的控件|
 
