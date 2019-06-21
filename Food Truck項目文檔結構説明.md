@@ -4,7 +4,9 @@
 | ---------- | -------------------------------------- |
 | lib        | 根目錄                                 |
 | ./pages    | 存放各個頁面的Widget                   |
-| ./constant | 存放一些常量類型文件，如項目的常用樣式 |
+|./common|公用庫|
+| ./common/constant | 存放一些常量類型文件，如項目的常用樣式 |
+| ./common/constant/localization |多語言本地化|
 |./model|存放數據庫文件|
 |./main.dart|函數入口文件|
 |./assets/|資源|
