@@ -12,8 +12,13 @@
 | coverphoto_en | varchar | N | 相簿的圖標圖片url（（EN） |
 | coverphoto_tc | varchar | N | 相簿的圖標圖片的url（TC） |
 | coverphoto_sc | varchar | N | 相簿的圖標圖片的url（SC） |
-|url|varchar|N|相簿中的圖片地址|
+
+## photo
+相片：存儲相簿中的照片
+| 字段名 |  數據類型    | 可否爲空（Y/N）    | 注釋     |
+| :---- |:---- | :-- | :-- |
 |photo_id|varchar|N|相簿中的圖片id|
+|photo_url|varchar|N|相簿中的圖片地址|
 |caption_en|varchar|N|位於照片下方的標題（EN）|
 |caption_tc|varchar|N|位於照片下方的標題（TC）|
 |caption_sc|varchar|N|位於照片下方的標題（SC）|
@@ -162,20 +167,7 @@
 |logo_tc|varchar|N|logo圖片的url（TC）|
 |logo_sc|varchar|N|logo圖片的url（SC）|
 |last_update|DATETIME|N|最後更新的時間|
-## navigation_menus
-側欄導航菜單表:記錄側欄信息
-
-|字段名字 |  數據類型   |  可否爲空（Y/N）  | 注釋   |
-| :----- | :-- | :-- | :-- |
-|id|int|N|id，主鍵|
-|     page_id     | int | Y | 頁面id(關聯到pages表的id) |
-|       title_en   | varchar | N | 標題（EN） |
-|     title_tc     | varchar | N | 標題（TC） |
-| title_sc  |varchar|N|標題（SC）|
-| is_valid |bool|N|判斷是否生效|
-|last_update|DATETIME|N|最後更新的時間|
-
-## pages
+## static_pages
 
 頁面信息表:用於存放頁面信息
 
@@ -202,8 +194,8 @@
 |about_us_url_sc|varchar|N|“The Birth of 16 FoodTrucks”的html(SC)|
 |last_update|DATETIME|N|最後更新的時間|
 
-## versions
-版本信息表：記錄版本號
+## local_date_versions
+版本信息表：記錄本地數據版本號
 
 |字段名字 |  數據類型   |  可否爲空（Y/N）  | 注釋   |
 | :-- | :-- | :-- | :-- |
