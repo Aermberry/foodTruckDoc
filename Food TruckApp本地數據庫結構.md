@@ -13,11 +13,11 @@
 | coverphoto_tc | varchar | N | 相簿的圖標圖片的url（TC） |
 | coverphoto_sc | varchar | N | 相簿的圖標圖片的url（SC） |
 
-## photo
+## photos
 相片：存儲相簿中的照片
 | 字段名 |  數據類型    | 可否爲空（Y/N）    | 注釋     |
 | :---- |:---- | :-- | :-- |
-|photo_id|varchar|N|相簿中的圖片id|
+|id|varchar|N|相簿中的圖片id|
 |photo_url|varchar|N|相簿中的圖片地址|
 |caption_en|varchar|N|位於照片下方的標題（EN）|
 |caption_tc|varchar|N|位於照片下方的標題（TC）|
