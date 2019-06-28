@@ -9,9 +9,7 @@
 |name_en|varchar|N|相簿名字(EN)|
 |name_tc|varchar|N|相簿名字(TC)|
 |name_sc|varchar|N|相簿名字(SC)|
-| coverphoto_en | varchar | N | 相簿的圖標圖片url（（EN） |
-| coverphoto_tc | varchar | N | 相簿的圖標圖片的url（TC） |
-| coverphoto_sc | varchar | N | 相簿的圖標圖片的url（SC） |
+| coverphoto | varchar | N | 相簿的圖標圖片url |
 
 ## photos
 相片：存儲相簿中的照片
