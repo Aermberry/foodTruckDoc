@@ -51,10 +51,6 @@
 |business_hours_describe_sc|varchar|N|描述營業時間信息（SC）|
 |event_id|int|N|盛事id(關聯到events表的id)|
 |operating_location_id|int|N|ID of operating location 運營地點的ID(關聯到locations表的id)|
-|english_version|float|N|版本號信息（英文）|
-|traditional_chinese version|float|N|版本號信息（TC）|
-|simplified_chinese_version|float|N|版本號信息（SC）|
-|last_update|DATETIME|N|更新時間|
 
 ##   signature_dishs
 招牌菜式表：記錄菜式的信息
