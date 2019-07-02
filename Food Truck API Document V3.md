@@ -439,10 +439,10 @@ UAT Server：https://foodtruck-uat.kanhan.com/json_v3
                   photo: String,
                       absoult: String
                  },
-                 sc: {
-                      photo: String,
-                      absoult: String
-                 }
+              sc: {
+                  photo: String,
+                  absoult: String
+              }
             },
             PrivacyPolicy: {
                  en: String,
