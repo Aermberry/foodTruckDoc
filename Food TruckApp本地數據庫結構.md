@@ -23,7 +23,6 @@
 |alt_en|varchar|N|照片的文字替代(EN)（方便屏幕閲讀器檢測）|
 |alt_tc|varchar|N|照片的文字替代(TC)（方便屏幕閲讀器檢測）|
 |alt_sc|varchar|N|照片的文字替代(SC)（方便屏幕閲讀器檢測）|
-|last_update|DATETIME|N|最後跟新日期|
 
 ## push_alerts
 
@@ -35,7 +34,6 @@
 | alert_en | String | N | 警告信息（EN） |
 | alert_tc | String | N | 警告信息（TC） |
 | alert_sc | String | N | 警告信息（SC） |
-|last_update|DATETIME|N|最後跟新日期|
 ## operating_schedules
 
 行事日曆表：記錄日期信息
@@ -67,7 +65,6 @@
 |photo_en|varchar|N|文字圖片的url(EN)|
 |photo_tc|varchar|N|文字圖片的url(TC)|
 |photo_sc|varchar|N|文字圖片的url(SC)|
-|last_update|DATETIME|N|最後更新時間|
 
 ## events
 盛事信息表：記錄盛事信息
@@ -99,7 +96,6 @@
 |logo_en|varchar|N|logo圖片的url（EN）|
 |logo_tc|varchar|N|logo圖片的url（TC）|
 |logo_sc|varchar|N|logo圖片的url（SC）|
-|last_update|DATETIME|N|最後更新時間|
 
 ## food_trucks
 
@@ -133,7 +129,6 @@
 |logo_en|varchar|N|logo圖片的url（EN）|
 |logo_tc|varchar|N|logo圖片的url（SC）|
 |logo_sc|varchar|N|logo圖片的url（TC）|
-|last_update|DATETIME|N|最後更新時間|
 
 ## operating_locations
 
@@ -160,7 +155,6 @@
 |logo_en|varchar|N|logo圖片的url（EN）|
 |logo_tc|varchar|N|logo圖片的url（TC）|
 |logo_sc|varchar|N|logo圖片的url（SC）|
-|last_update|DATETIME|N|最後更新的時間|
 ## static_pages
 
 頁面信息表:用於存放頁面信息
@@ -186,7 +180,6 @@
 |about_us_url_en|varchar|N|“The Birth of 16 FoodTrucks”的html(EN)|
 |about_us_url_tc|varchar|N|“The Birth of 16 FoodTrucks”的html(TC)|
 |about_us_url_sc|varchar|N|“The Birth of 16 FoodTrucks”的html(SC)|
-|last_update|DATETIME|N|最後更新的時間|
 
 ## local_date_versions
 版本信息表：記錄本地數據版本號
@@ -202,5 +195,4 @@
 |page_version|DATETIME|N|頁面信息版本號|
 |pushalert_version|DATETIME|N|警告信息版本號|
 |signature_dish_version|DATETIME|N|美食車招牌菜版本號|
-|last_update|DATETIME|N|最後更新的時間|
 
