@@ -15,7 +15,8 @@
 相片：存儲相簿中的照片
 | 字段名 |  數據類型    | 可否爲空（Y/N）    | 注釋     |
 | :---- |:---- | :-- | :-- |
-|id|varchar|N|相簿中的圖片id|
+|id|int|N|相簿中的圖片id|
+|album_id|int|N|相簿的id|
 |photo_url|varchar|N|相簿中的圖片地址|
 |caption_en|varchar|N|位於照片下方的標題（EN）|
 |caption_tc|varchar|N|位於照片下方的標題（TC）|
