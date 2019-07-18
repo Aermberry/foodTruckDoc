@@ -252,7 +252,7 @@ UAT Server：https://foodtruck-uat.kanhan.com/json_v3
                               food_truck_id: String,		//美食車的id
                               							//（關聯到food_trucks
                               							//表中的id）
-                              SHIFT: null|bool,			//晝夜更替 
+                              SHIFT: String,			//晝夜更替 
                               							//"morning": 
                               							//the foodtruck work on morning
                               							// "night":
