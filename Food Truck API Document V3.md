@@ -236,7 +236,7 @@ UAT Server：https://foodtruck-uat.kanhan.com/json_v3
   ~~~
 - response_body
   ~~~json
-  operating_schedule: {									//日曆
+  Calendar: {									//日曆
       list: [
           {
               date: String,								//日期  格式：YYYY-MM-DD
