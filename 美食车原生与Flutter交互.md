@@ -31,11 +31,10 @@ JSON内容格式
 ~~~
 
 
-### 3.方法标识符
+### 3.点击事件标识符
 
 ```
-MethodChannel Name : plugins_google_map	//MethodChannel标识符
-Method Name : onCLickMarker //地图点击事件回调方法名
+EventChannel Name : plugins.google_map/click	//EventChannel标识符
 ```
 
 ### 4.回传数据JSON格式
