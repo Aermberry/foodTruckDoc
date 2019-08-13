@@ -45,7 +45,7 @@
 |food_truck_id|int|N|美食車的id（關聯到food_trucks表中的id）|
 |shift|varchar|Y|晝夜更替<br> "morning" —> the foodtruck work on morning<br/>"night" —> the foodtruck work on night<br/> "full_day" —> the foodtruck work on full day|
 |  operating_date  |  datetime    | N | 日期  格式：YYYY-MM-DD |
-| business_hours_describe_en | varchar | N | 描述營業時間信息（EN） |
+| business_hours_describe_en | varchar | N | 描 間信息（EN） |
 | business_hours_describe_tc | varchar | N | 描述營業時間信息（TC） |
 |business_hours_describe_sc|varchar|N|描述營業時間信息（SC）|
 |event_id|int|N|盛事id(關聯到events表的id)|

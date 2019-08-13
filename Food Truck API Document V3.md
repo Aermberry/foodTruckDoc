@@ -136,7 +136,11 @@ UAT Server：https://foodtruck-uat.kanhan.com/json_v3
       operating_location: {			//美食车的运营地点
           list: [
               {
-                  OLID: int,		   	// ID of operating location 經營地點的ID
+                  OLID: int,		   	// ID of operating location 
+                  					//	若沒有盛事發生的情況下：
+                  					//	運營地點的ID為日常運營地點ID
+                  					//  若有盛世發生的情況下：
+                  					//  運營地點的ID為盛世運營地點ID
                   new: bool,  		//提醒有新的區域可以有美食車服務:
                   					//0：沒有新内容 
                   					//1:新内容
@@ -194,7 +198,7 @@ UAT Server：https://foodtruck-uat.kanhan.com/json_v3
                       tc: String,
                       sc: String
                   },
-                  location: { 		//位置信息
+                  location: { 		//盛世運營地點
                       en: String,
                       tc: String,
                       sc: String
@@ -252,7 +256,7 @@ UAT Server：https://foodtruck-uat.kanhan.com/json_v3
                               food_truck_id: String,		//美食車的id
                               							//（關聯到food_trucks
                               							//表中的id）
-                              SHIFT: String,			//晝夜更替 
+                              SHIFT: String,				//晝夜更替 
                               							//"morning": 
                               							//the foodtruck work on morning
                               							// "night":
