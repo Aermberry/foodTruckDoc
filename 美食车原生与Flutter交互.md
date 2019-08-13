@@ -21,7 +21,7 @@ viewID // Int 用于区分在不同页面使用的地图控件
 
 ~~~
 {
-	"json": "JSON内容",
+	"json": "JSON内容"
 }
 ~~~
 
