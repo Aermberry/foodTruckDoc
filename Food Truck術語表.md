@@ -4,7 +4,8 @@
 |營運時間表|Operating Schedule|记录美食车的运营时间、运营地点|
 |美食車|Food Truck|美食车|
 |警告信息|Warning Text|警告信息|
-|      運營地點      |            Operating Location            |                 美食车的运营地点                 |
+|      日常運營地點      |            Daily Operating Location            |                 美食车的日常运营地点                 |
+|      盛事運營地點      |            Event Operating Location            |                 美食车的盛事运营地点                 |
 | 运营时间 | Operating Date | 美食车的运营时间 |
 |      招牌菜式      |   Signature Dish   |            美食车的招牌菜式            |
 | 盛事 |Event  | 本土文化活動 |
