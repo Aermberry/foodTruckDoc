@@ -125,7 +125,7 @@ foodtruck.flutterSendValueToNative
   none
   ```
 
-### 3、分享URL
+### 3、分享图片
 
 - ##### Method name
 
