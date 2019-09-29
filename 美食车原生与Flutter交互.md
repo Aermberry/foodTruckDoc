@@ -113,6 +113,7 @@ foodtruck.flutterSendValueToNative
   ```
   JSON 字符串格式的内容：
   {
+  	"type": String		// 分享类型：Facebook,Twitter,Line,Whatsapp,E-mail
   	"title": String		// 标题
   	"desc": String		// 说明
   	"url": String			// url, URL编码后的内容
@@ -138,6 +139,7 @@ foodtruck.flutterSendValueToNative
   ```
   JSON 字符串格式的内容：
   {
+  	"type": String		// 分享类型：Facebook,Twitter,Line,Whatsapp,E-mail
   	"title": String		// 标题
   	"desc": String		// 说明
   	"url": String			// url, URL编码后的内容
