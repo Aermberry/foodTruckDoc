@@ -152,4 +152,32 @@ foodtruck.flutterSendValueToNative
   none
   ```
 
+
+### 4、iOS判断能否打开否个链接或者是否安装了否个应用
+
+- ##### Method name
+
+  ```
+  canopen_url
+  ```
+
+- ##### Method arguments
+
+  ```
+  URL		// 链接URL编码后的内容
+  其中
+  iOS:	
+  	fb://
+  	twitter://
+  	line://
+  	whatsapp://
+  Android:
+  ```
+
+- ##### CallBack
+
+  ```
+  Bool
+  ```
+
   
