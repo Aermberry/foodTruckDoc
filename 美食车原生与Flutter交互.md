@@ -90,6 +90,30 @@ plugins.google_map/click_viewID		// 其中 viewID 为上面的 viewID
 
 
 
+### WebView
+
+#### 1、WebView控件标识符
+
+```
+viewType : plugins.webview
+```
+
+#### 2、初始化需要传入的数据
+
+##### viewID
+
+```
+viewID // Int 用于区分在不同页面使用的地图控件
+```
+
+##### arguments
+
+```
+url		// String,编码后的 URL
+```
+
+
+
 ### Flutter 主动传值给原生
 
 参考内容：https://www.jianshu.com/p/ce7ed8bbf35c
@@ -113,7 +137,6 @@ foodtruck.flutterSendValueToNative
   ```
   JSON 字符串格式的内容：
   {
-  	"type": String		// 分享类型：Facebook,Twitter,Line,Whatsapp,E-mail
   	"title": String		// 标题
   	"desc": String		// 说明
   	"url": String			// url, URL编码后的内容
@@ -139,7 +162,6 @@ foodtruck.flutterSendValueToNative
   ```
   JSON 字符串格式的内容：
   {
-  	"type": String		// 分享类型：Facebook,Twitter,Line,Whatsapp,E-mail
   	"title": String		// 标题
   	"desc": String		// 说明
   	"url": String			// url, URL编码后的内容
@@ -151,33 +173,3 @@ foodtruck.flutterSendValueToNative
   ```
   none
   ```
-
-
-### 4、iOS判断能否打开否个链接或者是否安装了否个应用
-
-- ##### Method name
-
-  ```
-  canopen_url
-  ```
-
-- ##### Method arguments
-
-  ```
-  URL		// 链接URL编码后的内容
-  其中
-  iOS:	
-  	fb://
-  	twitter://
-  	line://
-  	whatsapp://
-  Android:
-  ```
-
-- ##### CallBack
-
-  ```
-  Bool
-  ```
-
-  
