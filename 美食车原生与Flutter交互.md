@@ -109,7 +109,9 @@ viewID // Int 用于区分在不同页面使用的地图控件
 ##### arguments
 
 ```
-url		// String,编码后的 URL
+{
+	"json": String, // String,编码后的 URL
+}
 ```
 
 
