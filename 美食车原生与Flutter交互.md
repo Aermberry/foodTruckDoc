@@ -1,7 +1,7 @@
 
 ## 美食车原生与Flutter交互
 
-### 地图
+- ### 地图
 
 ####1、地图控件标识符
 
@@ -19,7 +19,7 @@ viewID // Int 用于区分在不同页面使用的地图控件
 
 ##### arguments
 
-~~~
+~~~json
 {
 	"json": "JSON内容"
 }
@@ -27,7 +27,7 @@ viewID // Int 用于区分在不同页面使用的地图控件
 
 
 JSON内容格式
-~~~
+~~~json
 [{
     station_id:int 			//当前美食车/营运地点ID
     name: String				//当前美食车/营运地点名称
@@ -87,91 +87,3 @@ plugins.google_map/click_viewID		// 其中 viewID 为上面的 viewID
 ##### 注意事项：
 
 ##### FlutterMethodChannel和FlutterEventChannel需要在控件初始化后才能注册。
-
-
-
-### WebView
-
-#### 1、WebView控件标识符
-
-```
-viewType : plugins.webview
-```
-
-#### 2、初始化需要传入的数据
-
-##### viewID
-
-```
-viewID // Int 用于区分在不同页面使用的地图控件
-```
-
-##### arguments
-
-```
-{
-	"json": String, // String,编码后的 URL
-}
-```
-
-
-
-### Flutter 主动传值给原生
-
-参考内容：https://www.jianshu.com/p/ce7ed8bbf35c
-
-#### 1、通道标识
-
-```
-foodtruck.flutterSendValueToNative
-```
-
-#### 2、分享URL
-
-- ##### Method name
-
-  ```
-  share_url
-  ```
-
-- ##### Method arguments
-
-  ```
-  JSON 字符串格式的内容：
-  {
-  	"title": String		// 标题
-  	"desc": String		// 说明
-  	"url": String			// url, URL编码后的内容
-  }
-  ```
-
-- ##### CallBack
-
-  ```
-  none
-  ```
-
-### 3、分享图片
-
-- ##### Method name
-
-  ```
-  share_image
-  ```
-
-- ##### Method arguments
-
-  ```
-  JSON 字符串格式的内容：
-  {
-  	"title": String		// 标题
-  	"desc": String		// 说明
-  	"url": String			// url, URL编码后的内容
-  }
-  ```
-
-- ##### CallBack
-
-  ```
-  none
-  ```
